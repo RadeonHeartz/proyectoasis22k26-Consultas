@@ -36,6 +36,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\CapaControlador_Consultas\bin\Debug\CapaControlador_Consultas.dll</HintPath>
     </Reference>
+    <Reference Include="CapaVista_CbCampos">
+      <HintPath>..\..\Consultas_ComboBoxCampos\CapaVista_CbCampos\bin\Debug\CapaVista_CbCampos.dll</HintPath>
+    </Reference>
     <Reference Include="CapaVista_Componentes">
       <HintPath>..\..\Consultas_Componentes\CapaVista_Componentes\bin\Debug\CapaVista_Componentes.dll</HintPath>
     </Reference>
@@ -59,11 +62,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Controles\UcAgregarFiltro.cs">
+    <Compile Include="Controles\UsrAgregarFiltro.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controles\UcAgregarFiltro.Designer.cs">
-      <DependentUpon>UcAgregarFiltro.cs</DependentUpon>
+    <Compile Include="Controles\UsrAgregarFiltro.Designer.cs">
+      <DependentUpon>UsrAgregarFiltro.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmConsultasComplejas.cs">
       <SubType>Form</SubType>
@@ -77,40 +80,43 @@
     <Compile Include="FrmConsultasSimples.Designer.cs">
       <DependentUpon>FrmConsultasSimples.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controles\UcSeleccioneUnaConsulta.cs">
+    <Compile Include="Controles\UsrSeleccioneUnaConsulta.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controles\UcSeleccioneUnaConsulta.Designer.cs">
-      <DependentUpon>UcSeleccioneUnaConsulta.cs</DependentUpon>
+    <Compile Include="Controles\UsrSeleccioneUnaConsulta.Designer.cs">
+      <DependentUpon>UsrSeleccioneUnaConsulta.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Controles\UcTabla.cs">
+    <Compile Include="Controles\UsrTabla.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controles\UcTabla.Designer.cs">
-      <DependentUpon>UcTabla.cs</DependentUpon>
+    <Compile Include="Controles\UsrTabla.Designer.cs">
+      <DependentUpon>UsrTabla.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Controles\ClsTabla.resx">
-      <DependentUpon>ClsTabla.cs</DependentUpon>
+    <EmbeddedResource Include="Controles\UsrTabla.resx">
+      <DependentUpon>UsrTabla.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controles\UcAgregarFiltro.resx">
-      <DependentUpon>UcAgregarFiltro.cs</DependentUpon>
+    <EmbeddedResource Include="Controles\UsrAgregarFiltro.resx">
+      <DependentUpon>UsrAgregarFiltro.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmConsultasComplejas.resx">
       <DependentUpon>FrmConsultasComplejas.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmConsultasSimples.resx">
       <DependentUpon>FrmConsultasSimples.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controles\UcSeleccioneUnaConsulta.resx">
-      <DependentUpon>UcSeleccioneUnaConsulta.cs</DependentUpon>
+    <EmbeddedResource Include="Controles\UsrSeleccioneUnaConsulta.resx">
+      <DependentUpon>UsrSeleccioneUnaConsulta.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
